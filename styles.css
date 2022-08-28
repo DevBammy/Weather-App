@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("https://source.unsplash.com/featured/?nature,water");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Lato", sans-serif;
+}
+
+.card {
+  height: max-content;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 10px #666, -1px -1px 10px #666;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #ccc;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: #333;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.search button {
+  position: absolute;
+  right: -3px;
+  height: 100%;
+  width: 40px;
+  border-radius: 0 1rem 1rem 0;
+  outline: o;
+  border: none;
+  cursor: pointer;
+  background-color: #333;
+  color: #ccc;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.6rem;
+  margin: 0.6rem 0;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #ccc;
+  font-size: 1.3rem;
+}
+
+.icon {
+  width: 150px;
+}
+
+.description {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #ccc;
+  text-transform: capitalize;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.details div {
+  height: 90px;
+  width: 90px;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ccc;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.details div:first-child {
+  text-transform: uppercase;
+  background-color: #ccc;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.details div:nth-child(2) {
+  background-color: rgb(188, 236, 255);
+}
+
+.details div:nth-child(3) {
+  background-color: rgb(220, 252, 156);
+}
+
+.weather.loading {
+  position: relative;
+  visibility: hidden;
+  max-height: 1px;
+}
+
+.intro {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.intro.hide {
+  display: none;
+}
